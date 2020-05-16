@@ -9,20 +9,39 @@
 
     </head>
     <body>
-            <div class="page-header">
+        
+        <div class="page-header">
                 {% if user.is_authenticated %}    
                     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 {% endif %}
                     <h1><a href="/">Ben Harrison</a></h1>
-                </div>
-                <div class="content container">
-                    <div class="row">
-                        <div class="col-md-8">
-                        {% block content %}
-                        {% endblock %}
-                        
-                        </div>
-                    </div>
-                </div>
+         </div>
+        
+         <div class = "col-13"></div>
+         <div class = "col-14">
+                  <div class="content container"></div>
+                      <div class="row">
+                          <div class="col-md-8">
+                          {% block content %}
+                          {% endblock %}
+                          
+                          </div>
+                      </div>
+                  </div>
+          </div>
+       </div>          
+        <div class="col-3">
+                <!-- About Card -->
+                <img src="../../static/assets/images/wine.jpg" style="width:75%">   
+                
+                <h4><b>Ben Harrison</b></h4>
+                <a href="{% url 'my_cv' %}">My CV</a>
+                <p>This is where I will talk about me..</p>
+                {% if user.is_authenticated %}    
+                    <a href="{% url 'about_me' %}" ><span class="glyphicon glyphicon-pencil"></span></a>
+                {% endif %}
+        </div>           
+            
+        
     </body>
 </html>
