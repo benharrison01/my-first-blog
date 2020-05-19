@@ -2,13 +2,14 @@
 
 body {
     font-family: Sans-Serif;
+    background-color: #f1f1f1;
 } 
 
 .page-header {
-    background-color: #C25100;
+    background-color: #c25100;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
+    padding: 55px 20px 20px 130px;
+    }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
@@ -16,9 +17,7 @@ body {
     text-decoration: none;
 }
 
-.content {
-    margin-left: 40px;
-}
+
 
 h1, h2, h3, h4 {
     font-family: 'Courier New', Courier, monospace;
@@ -55,34 +54,52 @@ p {
     color: #000000;
 }
 
-.about-me {
-    
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-.col-13 {width: 2%}
-.col-14 {width: 73%}
-
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
   }
   
-  [class*="col-"] {
+  li {
     float: left;
-    padding: 15px;
-    
   }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 20px;
+  }
+ 
+  .leftcolumn {
+    float: left;
+    width: 75%;
+}
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+

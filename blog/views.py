@@ -40,8 +40,12 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
-def about_me(request):
-    return render(request, 'blog/about_me.html')
 
 def my_cv(request):
     return render(request, 'blog/my_cv.html')
+
+def contact(request):
+    return render(request, 'blog/contact.html')
+
+def useful_links(request):
+    return render(request, 'blog/useful_links.html')
