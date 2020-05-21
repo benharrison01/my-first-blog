@@ -49,3 +49,6 @@ def contact(request):
 
 def useful_links(request):
     return render(request, 'blog/useful_links.html')
+
+def homepage(request):
+    return render(request, 'blog/homepage.html')

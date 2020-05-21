@@ -6,6 +6,12 @@ font-family: 'Ubuntu', sans-serif;
 background-color: rgb(36, 35, 35);
 } 
 
+.homepage {
+
+width: 100%;
+height: 100%;
+}
+
 .page-header {
 /* background-color: #c25100; */
 background-color: #333; 
@@ -55,11 +61,11 @@ font-weight: bold;
 
 h2 {
     color: #f06060;
-    font-weight: bold;
+
 }
-post h2 a, .post h2 a:visited {
+.post h2 a, .post h2 a:visited {
     color: #f06060;
-    font-weight: bold;
+  
 }
 
 ul {
@@ -104,6 +110,8 @@ color: #ffffff;
 .leftcolumn {
 float: left;
 width: 75%;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 .rightcolumn {
@@ -111,7 +119,8 @@ position: static;
 float: left;
 width: 25%;
 left: 75%;
-padding-left: 20px;
+
+padding-right: 20px;
 position: fixed;
 }
 
@@ -124,19 +133,40 @@ position: fixed;
     .leftcolumn {
       width: 100%;
       padding: 0;
+      padding-left: 20px;
+padding-right: 20px;
     }
     .rightcolumn {
       width: 100%;
       position: static;
+      padding-left: 20px;
+padding-right: 20px;
     }
     .page-header {
         position: static;
     }
+    .homepage {
+        background-image: url('../../static/assets/images/florida.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        }
   }
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
     .rightcolumn, .leftcolumn {
       width: 100%;
       position: static;
+      padding-left: 20px;
+padding-right: 20px;
     }
+    .page-header {
+        position: static;
+    }
+    .homepage {
+        background-image: url('../../static/assets/images/florida.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        }
   }
