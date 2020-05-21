@@ -1,16 +1,17 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 {% block content %} 
 
 <div class = "card">
- <!-- <iframe src="../../static/assets/cv2020.pdf" type="application/pdf" width="100%" height="100%"> -->
+    <iframe src="{% static 'assets/cv2020.pdf' %}" type="application/pdf" width="100%" height="100%">
 
-        <object data="../../static/assets/cv2020.pdf" type="application/pdf" width="100%" height="100%">
+        <!-- <object data="../../static/assets/cv2020.pdf" type="application/pdf" width="100%" height="100%">
 
             <p>It appears you don't have a PDF plugin for this browser.
             You can <a href="../../static/assets/cv2020.pdf">click here to
             download the PDF file.</a></p>
           
-          </object>
+          </object> -->
 </div>
 
 
