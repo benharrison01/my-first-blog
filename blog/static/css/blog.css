@@ -1,105 +1,119 @@
 
 
 body {
-    font-family: Sans-Serif;
-    background-color: #f1f1f1;
+font-family: 'Ubuntu', sans-serif;
+/* background-color: #f1f1f1; */
+background-color: rgb(36, 35, 35);
 } 
 
 .page-header {
-    background-color: #c25100;
-    margin-top: 0;
-    padding: 55px 20px 20px 130px;
-    }
+/* background-color: #c25100; */
+background-color: #333; 
+margin-top: 0;
+padding: 55px 20px 20px 20px;
+
+/* position: fixed;
+width: 100%; */
+}
+
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+color: #ffffff;
+font-size: 36pt;
+text-decoration: none;
 }
 
 
-
-h1, h2, h3, h4 {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace;
-}
 
 .date {
-    color: #828282;
+color: #828282;
 }
 
 .save {
-    float: right;
+float: right;
 }
 
 .post-form textarea, .post-form input {
-    width: 100%;
+width: 100%;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+color: #ffffff;
+float: right;
+padding: 30px;
+font-size: 26pt;
+margin-right: 20px;
 }
 
 .post {
-    margin-bottom: 70px;
+margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
-    color: #000000;
+h1{
+font-weight: bold;
 }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    width: 100%;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
-
-  .active {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-  .card {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    margin-top: 20px;
-  }
- 
-  .leftcolumn {
-    float: left;
-    width: 75%;
+h2 {
+    color: #f06060;
+    font-weight: bold;
 }
+post h2 a, .post h2 a:visited {
+    color: #f06060;
+    font-weight: bold;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(36, 35, 35);
+position: fixed;
+width: 100%;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+/* not used */
+.active {
+background-color: #4CAF50;
+color: white;
+}
+
+.card {
+background-color: rgb(255, 255, 255);
+padding: 20px;
+margin-top: 20px;
+background-color: #333; 
+color: #ffffff;
+}
+
+.leftcolumn {
+float: left;
+width: 75%;
+}
+
 .rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-  }
+float: left;
+width: 25%;
+background-color: #f1f1f1;
+padding-left: 20px;
+}
+
+.leftcolumn, .rightcolumn {
+    margin-top: 175px;
+}
 
